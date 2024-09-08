@@ -1,0 +1,16 @@
+<section>
+    <h2>Me contacter</h2>
+    <mat-form-field (ngSubmit)="onSubmit()">
+        <label for="name">Nom</label>
+        <input type="text" id="name" [(ngModel)]="name" name="name" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" [(ngModel)]="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" [(ngModel)]="message" name="message" required></textarea>
+        
+        <mat-button type="submit">Envoyer</mat-button>
+
+    </mat-form-field>
+</section>
